@@ -158,11 +158,13 @@ hamburger.addEventListener('click', () => {
     }
 })
 window.addEventListener('resize', () => {
-  const menuContainer = document.querySelector('.menu-container');
-  if (window.innerWidth > 600) {
-    menuContainer.style.transform = 'translateX(0)';
-    menuContainer.style.zIndex = '3';
-  }
+    if (window.innerWidth > 600) {
+        mainMenu.style.transform = 'translateX(0)';
+        mainMenu.style.zIndex = '3';
+    } else {
+        mainMenu.style.transform = 'translateX(100%)';
+        mainMenu.style.zIndex = '2';
+    }
 });
 
 
