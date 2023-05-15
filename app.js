@@ -150,10 +150,10 @@ const mainMenu = document.querySelector('.main-menu')
 
 hamburger.addEventListener('click', () => {
     if (window.getComputedStyle(mainMenu).zIndex == "2") {
-        mainMenu.style.transform = "translateX(0px)"
+        mainMenu.style.transform = "translateX(0)"
         mainMenu.style.zIndex = '3'
     } else {
-        mainMenu.style.transform = "translateX(600px)"
+        mainMenu.style.transform = "translateX(100%)"
         mainMenu.style.zIndex = '2'
     }
 })
