@@ -270,11 +270,9 @@ main {
 
 .planet-container img {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    transform: translate(-50%, -50%) scale(0.38275);
+    top: 50%;
+    left: 50%;
 }
 
 .info-container {
@@ -656,6 +654,9 @@ footer {
         height: 320px;
         padding-left: 0;
         width: 100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
 
     }
 
