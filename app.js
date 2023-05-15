@@ -107,7 +107,7 @@ for (let i = 0; i < menuOptions.length; i++) {
         })
         paragraphs[0].style.display = 'block'
         if (!window.matchMedia("(min-width: 601px)").matches) {
-            mainMenu.style.transform = "translateX(600px)"
+            mainMenu.style.transform = "translateX(100%)"
             mainMenu.style.zIndex = '2'
         }
     })
@@ -157,5 +157,12 @@ hamburger.addEventListener('click', () => {
         mainMenu.style.zIndex = '2'
     }
 })
+window.addEventListener('resize', () => {
+  const menuContainer = document.querySelector('.menu-container');
+  if (window.innerWidth > 600) {
+    menuContainer.style.transform = 'translateX(0)';
+    menuContainer.style.zIndex = '3';
+  }
+});
 
 
